@@ -591,3 +591,4 @@ Built with:
 - [shadcn/ui](https://ui.shadcn.com/) - UI components
 - [Drizzle ORM](https://orm.drizzle.team/) - Database ORM
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- Redeploy trigger
