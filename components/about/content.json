@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "title": "About - Gptgate",
+    "description": "Learn about our mission to provide seamless access to multiple premium AI models through one unified platform. Discover how we're simplifying AI interactions with transparent pricing and powerful management tools.",
+    "keywords": [
+      "AI chat platform",
+      "multi-model AI",
+      "AI tools company",
+      "OpenRouter platform",
+      "AI innovation",
+      "AI conversation management",
+      "about us"
+    ],
+    "ogTitle": "About Gptgate - Our Mission & Story",
+    "ogDescription": "Providing seamless access to 15+ premium AI models through one unified platform. Learn about our mission to simplify AI interactions.",
+    "ogImage": "/og-about.png",
+    "ogImageAlt": "About Gptgate",
+    "twitterTitle": "About Gptgate - Our Mission & Story",
+    "twitterDescription": "Providing seamless access to 15+ premium AI models through one unified platform.",
+    "twitterImage": "/og-about.png"
+  },
+  "schema": {
+    "organizationName": "Gptgate",
+    "organizationDescription": "Multi-model AI chat platform providing access to 15+ premium AI models with conversation management and usage analytics.",
+    "foundingDate": "2024",
+    "contactEmail": "albertsagalakov@icloud.com",
+    "socialLinks": [
+      "skip",
+      "skip",
+      ""
+    ],
+    "aboutPageDescription": "Learn about our mission to provide seamless access to multiple premium AI models through one unified platform with transparent pricing and powerful management tools."
+  }
+}
