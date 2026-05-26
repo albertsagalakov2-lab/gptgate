@@ -1,53 +1,39 @@
-// Import all prompts statically (works on Vercel/serverless)
-import { allPrompts } from '@/prompts/json';
+import { allPrompts } from "@/prompts/json";
 
-/**
- * Get the first prompt from the imported prompts array
- * Uses static imports - works reliably on Vercel and serverless platforms
- *
- * @returns The first prompt content as a string
- *
- * @example
- * const systemPrompt = getFirstPrompt();
- */
+type Prompt = {
+  content?: string;
+  [key: string]: unknown;
+};
+
+const prompts = allPrompts as Prompt[];
+
 export function getFirstPrompt(): string {
-  if (!allPrompts || allPrompts.length === 0) {
-    throw new Error('No prompts found in prompts/json directory');
+  if (!prompts || prompts.length === 0) {
+    return "You are a helpful AI assistant.";
   }
 
-  const firstPrompt = allPrompts[0];
+  const firstPrompt = prompts[0];
 
-  if (!firstPrompt || !firstPrompt.content) {
-    throw new Error('First prompt is missing content property');
+  if (!firstPrompt?.content) {
+    return "You are a helpful AI assistant.";
   }
 
   return firstPrompt.content;
 }
 
-/**
- * Get all available prompts
- *
- * @returns Array of all prompt objects
- */
 export function getAllPrompts() {
-  return allPrompts;
+  return prompts;
 }
 
-/**
- * Get a specific prompt by index
- *
- * @param index - The index of the prompt (0-based)
- * @returns The prompt content as a string
- */
 export function getPromptByIndex(index: number): string {
-  if (!allPrompts || index < 0 || index >= allPrompts.length) {
-    throw new Error(`Prompt at index ${index} not found`);
+  if (!prompts || index < 0 || index >= prompts.length) {
+    return "You are a helpful AI assistant.";
   }
 
-  const prompt = allPrompts[index];
+  const prompt = prompts[index];
 
-  if (!prompt || !prompt.content) {
-    throw new Error(`Prompt at index ${index} is missing content property`);
+  if (!prompt?.content) {
+    return "You are a helpful AI assistant.";
   }
 
   return prompt.content;
